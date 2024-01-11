@@ -1,1 +1,21 @@
-1
+1. gcloud projects create kubernete-app-demo --name="Kubernete App Demo"
+2. gcloud beta billing projects link kube-project --billing-account 015290-F4ADD9-CAC639 
+3. gcloud container clusters create-auto kube-project --region=asia-south1
+4. gcloud container clusters list
+5.
+
+Once the cluster creation process is done, you can check the created cluster using the following command
+
+5. gcloud container clusters list
+
+# Command returns following response
+NAME: kubernetes-demo
+LOCATION: asia-south1
+MASTER_VERSION: 1.24.9-gke.3200
+MASTER_IP: 34.93.42.221
+MACHINE_TYPE: e2-medium
+NODE_VERSION: 1.24.9-gke.3200
+NUM_NODES: 2
+STATUS: RUNNING
+
+====================================================================================================
